@@ -49,6 +49,7 @@
     "gulp-plumber": "~1.0.1",
     "gulp-shell": "~0.4.3",
     "gulp-sourcemaps": "~1.5.2",
+    "gulp-sym": "0.0.14",
     "gulp-template": "^3.0.0",
     "gulp-tslint": "^3.3.0",
     "gulp-tslint-stylish": "^1.0.4",

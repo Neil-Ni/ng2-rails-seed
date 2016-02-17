@@ -13,7 +13,9 @@
     "exclude": [
         "node_modules",
         "typings/browser.d.ts",
-        "typings/browser/**"
+        "typings/browser/**",
+        "public/node_modules",
+        "dist"
     ],
     "compileOnSave": false
 }

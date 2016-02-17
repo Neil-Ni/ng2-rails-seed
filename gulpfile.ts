@@ -28,6 +28,8 @@ gulp.task('build.dev', done =>
               'build.js.dev',
               'build.e2e_test',
               'build.index.dev',
+              'symlink.node_modules.dev',
+              'symlink.public',
               done));
 
 // --------------
@@ -42,6 +44,7 @@ gulp.task('build.prod', done =>
               'build.bundles',
               'build.bundles.app',
               'build.index.prod',
+              'symlink.public',
               done));
 
 // --------------

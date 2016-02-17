@@ -39,6 +39,8 @@ export const CSS_DEST             = `${APP_DEST}/css`;
 export const JS_DEST              = `${APP_DEST}/js`;
 export const APP_ROOT             = ENV === 'dev' ? `${APP_BASE}${APP_DEST}/` : `${APP_BASE}`;
 export const VERSION              = appVersion();
+export const NODE_MODULES_DIR     = 'node_modules';
+export const PUBLIC_DIR           = 'public';
 
 export const CSS_PROD_BUNDLE      = 'all.css';
 export const JS_PROD_SHIMS_BUNDLE = 'shims.js';

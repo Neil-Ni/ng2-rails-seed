@@ -2,7 +2,7 @@ import * as async from 'async';
 import * as util from 'gulp-util';
 import * as chalk from 'chalk';
 import * as del from 'del';
-import {APP_DEST, TEST_SPEC_DEST, TEST_E2E_DEST, TMP_DIR} from '../config';
+import {APP_DEST, TEST_SPEC_DEST, TEST_E2E_DEST, TMP_DIR, PUBLIC_DIR} from '../config';
 
 export = function clean(gulp, plugins, option) {
   return function (done) {
@@ -26,7 +26,7 @@ function cleanAll(done) {
   ], done);
 }
 function cleanDist(done) {
-  del(APP_DEST).then((paths) => {
+  del([APP_DEST, PUBLIC_DIR]).then((paths) => {
     util.log('Deleted', chalk.yellow(paths && paths.join(', ') || '-'));
     done();
   });
